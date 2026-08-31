@@ -52,6 +52,8 @@ export default function Home() {
       contactText:
         "Wir beraten Sie gerne persönlich und finden gemeinsam die passende Lösung für Ihr Vorhaben.",
       footerTagline: "Paneele · Beratung · Systemlösungen",
+      footerContact: "Kontakt",
+      taxNumber: "St. Nr. 03359240219",
       legal: "Impressum",
       privacy: "Datenschutz",
     },
@@ -99,6 +101,8 @@ export default function Home() {
       contactText:
         "Saremo lieti di offrirvi una consulenza personale e di trovare insieme la soluzione più adatta al vostro progetto.",
       footerTagline: "Pannelli · Consulenza · Soluzioni",
+      footerContact: "Contatti",
+      taxNumber: "Part. IVA 03359240219",
       legal: "Note legali",
       privacy: "Privacy",
     },
@@ -209,6 +213,23 @@ export default function Home() {
         </div>
       </section>
 
+      {/* COMPANY */}
+      <section id="unternehmen" className="section company-section">
+        <div className="container company-grid">
+          <div className="company-visual">
+            <div className="company-grid-lines"></div>
+            <div className="company-mark">M</div>
+          </div>
+
+          <div className="company-content">
+            <p className="section-label">{t.companyLabel}</p>
+            <h2>{t.companyTitle}</h2>
+            <p>{t.companyText}</p>
+            <span className="coming-soon">{t.moreSoon}</span>
+          </div>
+        </div>
+      </section>
+
       {/* SERVICES */}
       <section id="leistungen" className="section services-section">
         <div className="container">
@@ -250,23 +271,6 @@ export default function Home() {
               <p>{t.systemsText}</p>
               <div className="service-line"></div>
             </article>
-          </div>
-        </div>
-      </section>
-
-      {/* COMPANY */}
-      <section id="unternehmen" className="section company-section">
-        <div className="container company-grid">
-          <div className="company-visual">
-            <div className="company-grid-lines"></div>
-            <div className="company-mark">M</div>
-          </div>
-
-          <div className="company-content">
-            <p className="section-label">{t.companyLabel}</p>
-            <h2>{t.companyTitle}</h2>
-            <p>{t.companyText}</p>
-            <span className="coming-soon">{t.moreSoon}</span>
           </div>
         </div>
       </section>
@@ -336,11 +340,13 @@ export default function Home() {
             <p>Andrianerweg 22</p>
             <p>39018 Terlan (BZ)</p>
             <p>Italia</p>
+            <p>{t.taxNumber}</p>
           </div>
 
           <div>
-            <strong>Kontakt</strong>
+            <strong>{t.footerContact}</strong>
             <a href="mailto:info@materatec.it">info@materatec.it</a>
+            <a href="tel:+393484511210">+39 348 451 1210</a>
           </div>
 
           <div className="footer-legal">
